@@ -8,6 +8,8 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,5 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onImageclick(View Imageclick){
+
+        ImageView image=(ImageView) Imageclick;
+
+        image.setTranslationX(-2000);
+        image.setImageResource(R.drawable.tiger);
+        image.animate().translationXBy(2000).alpha(1).rotationX(3600).setDuration(1000);
+
+
+    }
 
 }

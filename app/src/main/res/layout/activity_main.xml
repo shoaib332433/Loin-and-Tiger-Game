@@ -20,7 +20,7 @@
             android:text="Start the game"
             android:textAlignment="center"
             android:gravity="center_horizontal"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:fontFamily="sans-serif-condensed-light"
             />
 
@@ -38,73 +38,81 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion"
-                />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img6"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img7"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img8"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
             <ImageView
                 android:id="@+id/img9"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
+                android:alpha="0"
                 android:background="#000000"
-                android:src="@drawable/lion" />
+                android:onClick="onImageclick" />
 
 
         </androidx.gridlayout.widget.GridLayout>
