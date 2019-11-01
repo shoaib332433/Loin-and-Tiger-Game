@@ -800,6 +800,7 @@ id fill_horizontal
 id fill_vertical
 id forever
 id gone
+id grid
 id group_divider
 id groups
 id headinggame
