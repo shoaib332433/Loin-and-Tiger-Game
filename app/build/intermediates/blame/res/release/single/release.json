@@ -24,12 +24,12 @@
         "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_tiger.png.flat",
         "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\drawable-xxxhdpi\\tiger.png"
+    },
+    {
+        "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v21_ic_launcher_background.xml.flat",

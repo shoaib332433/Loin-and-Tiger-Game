@@ -16,12 +16,12 @@
 12-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.1.0] C:\Users\SHOAIB\.gradle\caches\transforms-2\files-2.1\279861f12c057092d1e6acc85106df71\core-1.1.0\AndroidManifest.xml:24:18-86
-14        android:icon="@mipmap/ic_launcher"
-14-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:7:9-43
+14        android:icon="@drawable/lion"
+14-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:7:9-38
 15        android:label="@string/app_name"
 15-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:8:9-41
-16        android:roundIcon="@drawable/lion"
-16-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:9:9-43
+16        android:roundIcon="@mipmap/ic_launcher_round"
+16-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:9:9-54
 17        android:supportsRtl="true"
 17-->C:\Users\SHOAIB\AndroidStudioProjects\LionandTigerGame\app\src\main\AndroidManifest.xml:10:9-35
 18        android:theme="@style/AppTheme" >
