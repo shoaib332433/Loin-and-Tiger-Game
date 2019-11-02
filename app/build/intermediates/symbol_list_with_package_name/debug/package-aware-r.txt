@@ -810,6 +810,7 @@ id homeAsUp
 id horizontal
 id icon
 id icon_group
+id icons
 id ifRoom
 id image
 id img1
@@ -949,6 +950,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_splashscreen
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
