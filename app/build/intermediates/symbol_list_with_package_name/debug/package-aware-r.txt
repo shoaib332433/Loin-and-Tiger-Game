@@ -799,6 +799,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id gamewelcome
 id gone
 id grid
 id group_divider
@@ -846,6 +847,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id restart
 id right
 id right_icon
 id right_side
