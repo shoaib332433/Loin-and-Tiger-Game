@@ -5,6 +5,7 @@ import androidx.gridlayout.widget.GridLayout;
 
 import android.graphics.drawable.Drawable;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ONE,TWO,NO
     }
 
+    private MediaPlayer mediaPlayer,mediaPlayer1;
     private GridLayout grid;
     private Button btn;
     Player currentplayer=Player.ONE;
@@ -51,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        mediaPlayer=MediaPlayer.create(this,R.raw.lion);
+        mediaPlayer1=MediaPlayer.create(this,R.raw.tiger);
+
     }
 
 
@@ -66,10 +72,12 @@ public class MainActivity extends AppCompatActivity {
 
             if (currentplayer==Player.ONE){
                 img.setImageResource(R.drawable.lion);
+                mediaPlayer.start();
                 currentplayer=Player.TWO;
 
             }else if (currentplayer==Player.TWO){
                 img.setImageResource(R.drawable.tiger);
+                mediaPlayer1.start();
                 currentplayer=Player.ONE;
             }
 

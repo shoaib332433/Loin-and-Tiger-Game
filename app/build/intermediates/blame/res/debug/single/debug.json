@@ -80,6 +80,10 @@
         "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\debug\\raw_tiger.mp3.flat",
+        "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\raw\\tiger.mp3"
+    },
+    {
         "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
@@ -110,6 +114,10 @@
     {
         "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\debug\\raw_lion.mp3.flat",
+        "source": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\src\\main\\res\\raw\\lion.mp3"
     },
     {
         "merged": "C:\\Users\\SHOAIB\\AndroidStudioProjects\\LionandTigerGame\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
