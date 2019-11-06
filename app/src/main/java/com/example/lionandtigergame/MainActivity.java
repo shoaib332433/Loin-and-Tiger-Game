@@ -3,15 +3,15 @@ package com.example.lionandtigergame;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.gridlayout.widget.GridLayout;
 
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ONE,TWO,NO
     }
 
-    private MediaPlayer mediaPlayer,mediaPlayer1;
+    private MediaPlayer mediaPlayer,mediaPlayer1,trygaain;
     private GridLayout grid;
     private Button btn;
     Player currentplayer=Player.ONE;
@@ -56,19 +56,21 @@ public class MainActivity extends AppCompatActivity {
 
         mediaPlayer=MediaPlayer.create(this,R.raw.lion);
         mediaPlayer1=MediaPlayer.create(this,R.raw.tiger);
+        trygaain=MediaPlayer.create(this,R.raw.tryagain);
 
     }
 
 
     public void onImageclick(View Imageclick){
         ImageView img= (ImageView) Imageclick;
-        btn.setVisibility(View.VISIBLE);
         int index=Integer.parseInt(img.getTag().toString());
 
 
         if ( playerindexvalue[index]==Player.NO && selected.equals(false)){
 
             playerindexvalue[index]=currentplayer;
+
+            btn.setVisibility(View.VISIBLE);
 
             if (currentplayer==Player.ONE){
                 img.setImageResource(R.drawable.lion);
@@ -87,20 +89,51 @@ public class MainActivity extends AppCompatActivity {
                         playerindexvalue[playerindex[1]] == playerindexvalue[playerindex[2]] &&
                         playerindexvalue[playerindex[0]] != Player.NO){
 
-                    if (currentplayer==Player.ONE){
+                    if (currentplayer.equals(Player.ONE)){
                         winplayer="Two Tiger";
-                    }else if(currentplayer==Player.TWO){
+                    }else if(currentplayer.equals(Player.TWO)){
                         winplayer="One Lion";
                     }
 
                     selected=true;
                     Toast.makeText(MainActivity.this,"Player "+winplayer+" is the  Winner",Toast.LENGTH_SHORT).show();
+                    btn.setVisibility(View.VISIBLE);
                 }
             }
             img.animate().alpha(1).setDuration(1000);
+
+
+//            if(!Arrays.asList(playerindexvalue).contains(Player.NO)){
+//
+//                for (int[] playerindex: dimentions){
+//
+//                    if (!playerindexvalue[playerindex[0]].equals(playerindexvalue[playerindex[1]])  &&
+//                            !playerindexvalue[playerindex[1]].equals(playerindexvalue[playerindex[2]])){
+//
+//                        Toast.makeText(MainActivity.this,"Hello",Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//
+//            }
+
+            if (!selected.equals(true)) {
+                if (!Arrays.asList(playerindexvalue).contains(Player.NO)) {
+                    mediaPlayer.pause();
+                    mediaPlayer1.pause();
+                    trygaain.start();
+                    reset();
+                    btn.setVisibility(View.GONE);
+                }
+            }
+
         }
 
     }
+
+
+
+
+
 
 
     public void reset(){
@@ -108,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0;i<grid.getChildCount();i++){
             ImageView img=(ImageView) grid.getChildAt(i);
             img.setImageDrawable(null);
-            img.setAlpha(0.2f);
+            img.animate().alpha(0.2f).setDuration(1000);
         }
         for (int i=0;i<playerindexvalue.length;i++){
             playerindexvalue[i] = Player.NO;
@@ -117,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
         currentplayer=Player.ONE;
 
     }
+
 
 
 }
