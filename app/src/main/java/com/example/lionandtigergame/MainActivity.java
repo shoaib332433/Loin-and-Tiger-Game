@@ -103,19 +103,6 @@ public class MainActivity extends AppCompatActivity {
             img.animate().alpha(1).setDuration(1000);
 
 
-//            if(!Arrays.asList(playerindexvalue).contains(Player.NO)){
-//
-//                for (int[] playerindex: dimentions){
-//
-//                    if (!playerindexvalue[playerindex[0]].equals(playerindexvalue[playerindex[1]])  &&
-//                            !playerindexvalue[playerindex[1]].equals(playerindexvalue[playerindex[2]])){
-//
-//                        Toast.makeText(MainActivity.this,"Hello",Toast.LENGTH_SHORT).show();
-//                    }
-//                }
-//
-//            }
-
             if (!selected.equals(true)) {
                 if (!Arrays.asList(playerindexvalue).contains(Player.NO)) {
                     mediaPlayer.pause();
@@ -129,11 +116,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-
-
-
-
 
 
     public void reset(){
